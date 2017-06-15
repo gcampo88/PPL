@@ -1,0 +1,40 @@
+html, body {
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+h1 {
+  text-align: center;
+}
+
+hr {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+rect {
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.graph {
+  margin-top: 100px;
+}
+
+.hidden {
+  display: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  text-align: left;
+}

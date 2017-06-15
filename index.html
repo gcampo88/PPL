@@ -3,14 +3,45 @@
   <head>
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="./app.js"></script>
+    <script src="app.js"></script>
+    <script src="company.js"></script>
+    <link rel="stylesheet" href="app.css">
     <meta charset="utf-8">
     <title>
       Parental Leave
     </title>
   </head>
   <body>
-    <div id="content" class="content">
+    <div class="container">
+      <h1>A comparison of paid parental leave policies</h1>
+      <p>A visualization of crowd-sourced, self-reported information on various parental leave policies at companies. See <a href="https://github.com/davedash/parental-leave">here</a> for more info. </p>
+      <hr>
+
+      <div class="graph"></div>
+
+      <table class="spotlight hidden">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Maternity</th>
+            <th>Paternity</th>
+            <th colspan="2">Notes</th>
+            <th>Source</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="name">Not given</td>
+            <td id="maternity">Not given</td>
+            <td id="paternity">Not given</td>
+            <td colspan="2" id="notes">Not given</td>
+            <td><a id="source" href=""></a></td>
+            <td id="date">Not given</td>
+          </tr>
+        </tbody>
+      </table>
+
     </div>
   </body>
 </html>
