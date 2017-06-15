@@ -63,7 +63,7 @@ const setUpChart = (companies, width, height) => {
      .data(companies)
      .enter()
      .append('rect')
-     .attr('width', (d, i) => widthPerCo > 1 ? widthPerCo - 1 : widthPerCo)
+     .attr('width', (d, i) => widthPerCo)
      .attr('height', (d, i) => heightPerWeek *  d.maternity)
      .attr('x' , (d, i) => widthPerCo * i + 50)
      .attr('y' , (d, i) => height - heightPerWeek * d.maternity)
